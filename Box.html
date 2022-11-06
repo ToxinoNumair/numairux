@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Packages</title>
+</head>
+<style type="text/css">
+    * {margin: 0; padding: 0;}
+
+body {
+            background:url("mic3.jpg"); 
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        .wrapper{
+            width: 960px;
+            margin: 0% auto 0;
+        }
+        
+
+        .single-portfolio{
+            background-size:cover;
+        }
+
+        .single-portfolio {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 4px;
+            background-size: 100%;
+            background-position: center;
+            transition: 0.5s;
+            overflow: hidden;
+            font-family: poppins;
+            line-height: 1.2;
+            border-radius: 50px;
+        }
+
+        .single-portfolio::before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(90%);
+            background-color: #262626;
+            color: #fff;
+            padding: 0 8px;
+            content: attr(data-title);
+            font-size: 24px;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        .single-portfolio::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            opacity: 0;
+            text-align: center;
+            padding-top: 35%;
+            font-size: 35px;
+            text-transform: uppercase;
+            content: attr(data-text);
+            transition: 0.5s;
+            margin-top: 8px;
+            transform: translateY(100%);
+            border-radius: 50px;
+        }
+
+        .single-portfolio:hover:after{
+            transform:translateY(0);
+            transition:0.5s 0.5s;
+            opacity:1;
+            border-radius: 50px;
+        }
+        .single-portfolio:hover:before{
+            transform:translateY(0);
+            padding:8px;
+            background-color:rgba(0,0,0,0.9);
+            transition: 0.5s;
+            border-radius: 10px;
+        }
+         
+
+         @media (max-width: 768px)
+{
+        body {
+            background:url("mic3.jpg"); 
+            background-repeat: no-repeat;
+            background-size: 200%;
+            position: relative;
+        }
+}
+</style>
+  <link rel="stylesheet" href="style/styles.css" />
+
+<body>
+
+     <nav>
+                <ul>
+                  <li><a href="Parallax.html">Home</a></li>
+                  <li><a href="Box.html">Packages</a></li>
+                  <li><a href="Slider.html">Gallery</a></li>
+                  <li><a href="NKregistration.html">Registration</a></li>
+                  <li><a href="card.html">Contact Us</a></li>
+                  <li><a href="Aboutus.html">About Us</a>
+                  </li>
+                </ul>
+
+              </nav>
+<div class="wrapper">
+        <a href="#" class="single-portfolio" style="background-image:url(fe.jpg)" data-title="Fruity Edition" data-text="199$"></a>
+
+        <a href="#" class="single-portfolio" style="background-image:url(pe.jpg)" data-title="Producer Edition" data-text="399$ "></a>
+
+        <a href="#" class="single-portfolio" style="background-image:url(se.jpg)" data-title="Signature Edition" data-text="999$"></a>
+    </div>
+</body>
+</html>
+
