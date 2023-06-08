@@ -548,7 +548,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #fe3f40!important;
+    color: #35a7d1!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -595,7 +595,7 @@ header
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
-    border-bottom: 1px solid #e7e7e7;
+   
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -604,8 +604,8 @@ header
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #f7f7f7 !important;
-    color: #191a20 !important;
+    background: white !important;
+    color: #2f313c !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
@@ -801,7 +801,6 @@ Banner Style
 .main-banner .left-content p {
   margin: 20px 0px;
 }
-
 
 
 /* 
@@ -1418,41 +1417,41 @@ responsive
   .project1  {
   
     float: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
     padding-bottom: 1rem;
     
   }
   .project2 {
     float: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
   .project3{
     float: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
 
   .project4 {
   
     float: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
     
   }
   .project5{
     float: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
   .project6{
     float: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
 
   .project7{
     float: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
   .project8{
     float: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
 
 
@@ -1484,7 +1483,13 @@ responsive
     transition: 0.4s all ease-in-out;
   }
 
-
+  .landing-picture img {
+    width: 25rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 30rem;
+    
+  }
 
 
 
