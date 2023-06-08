@@ -9,6 +9,12 @@
     <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <title>Numair - Portfolio</title>
 
@@ -52,9 +58,11 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#about">About Me</a></li>
-              <li class="scroll-to-section"><a href="Slider.html">Portfolio</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="card.html">Contact Now</a></div></li> 
+              <li class="scroll-to-section"><a href="#about">My Work</a></li>
+              <li class="scroll-to-section"><a href="#contactme">Contact Me</a></li>
+              <li class="scroll-to-section"><a href="Numair-Resume.pdf" download="Numair-Resume" target="_blank">CV</a></li>
+              
+              
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -75,14 +83,15 @@
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 
+                
                 <h2>HEY, I'm <em>NUMAIR.</em> <br> <span>UI/UX Designer</span> <br> From <em style="color: rgb(35, 143, 35);"> Pakistan.</em></h2>
                 
                
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="Snapchat-2065750835.jpg" alt="team meeting">
+              <div class="landing-picture" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="NUMAIR2.jpg" alt="team meeting">
               </div>
             </div>
           </div>
@@ -92,13 +101,81 @@
   </div>
 
   <div id="about" class="about-us section">
-    <h2>A UI/UX Designer With <em style="color: rgb(17, 165, 206);"> 3 Years </em> Of Experience.</h2>
+
+
+    <div class="project1">
+      <a href="Haunty-CaseStudy.html"><img src="Haunty Banner.png" alt="H A U N T Y"></a>
+    </div>
+
+    <div class="project2">
+      <a href="Mudaris-CaseStudy.html"><img src="Mudaris Banner.png" alt="M U D A R I S"></a>
+    </div>
+
+    <div class="project3">
+      <a href="Proleaf-CaseStudy.html"> <img src="ProLeafBanner.png" alt="P R O L E A F"></a>
+    </div>
+
+    <div class="project4">
+      <a href="QR-CaseStudy.html"><img src="QRBanner.png" alt="Q R"></a>
+    </div>
+
+    <div class="project5">
+      <a href="E-SCHOOL-Dashboard.html"> <img src="esBanner2.png" alt="E S C H O O L"></a>
+    </div>
+
+    <div class="project6">
+      <a href="Spotify-CaseStudy.html"><img src="SpotifyBanner.png" alt="S P O T I F Y"></a>
+    </div>
+
+    <div class="project7">
+      <a href="Hush-CaseStudy.html"><img src="HushBanner2.png" alt="H U S H"></a>
+    </div>
+
+    <div class="project8">
+      <a href="Tinder-CaseStudy.html"><img src="TinderBanner2.png" alt="T I N D E R"></a>
+    </div>
+
+    
+
+
+
   </div>
 
+
   
+ 
+
+  <div id="contactme" class="contactme section">
+
+    <div class="business-card middle">
+      <div class="front">
+        
+        <span>UI/UX Designer</span>
+        <ul class="contact-info">
+          <li>
+            <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/n-u-m-a-i-r-t-4071ba22a/" style="color:black; border-bottom:#34495e;">Numair Tahir
+          </li></a>
+          <li>
+            <i class="far fa-envelope"></i> numair.ux@gmail.com
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan
+          </li>
+        </ul>
+      </div>
+      <div class="back">
+        <span>N U M A I R</span>
+      </div>
+      
+    </div>
+
+    
+  </div>
+
 
   
   <!-- Scripts -->
+  
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
@@ -107,4 +184,11 @@
   <script src="assets/js/templatemo-custom.js"></script>
 
 </body>
+
 </html>
+
+<script>
+  $(".business-card").hover(function(){
+    $(".business-card").toggleClass("business-card-active");
+  });
+</script>
